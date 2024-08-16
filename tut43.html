@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>operators in javaScript</title>
+    <script src="/JavaScript/aparna.js"></script>
+    <script>
+      // operators in javascript
+      //  In 3 + 4 '+' is the operator and 3,4 are operands
+      //  operand - entities on which operators operate
+      // 1. unary operator - it has single operand (x = -x)
+      //  Examples of unary operator
+      c = 285;
+      c = -c;
+      console.log(c);
+      //  2. binary operator - It has 2 operands (x = x+6)
+      //  Examples of binary operator
+      d = 456 + 8;
+      console.log(d);
+
+      var num1 = 6;
+      var num2 = 2;
+
+      console.log("num1=", num1, "& num2=", num2);
+
+      // Arithmetic operators in action in javaScript
+      console.log("The value of num1 + num2 is " + (num1 + num2));
+      console.log("The value of num1 - num2 is " + (num1 - num2));
+      console.log("The value of num1 * num2 is " + num1 * num2);
+      console.log("The value of num1 / num2 is " + num1 / num2);
+      console.log("num1 % num2 =", num1 % num2); // modulus =  remainders value
+
+      console.log("The value of num1 ** num2 is " + num1 ** num2); // exponentiation  6^2
+      console.log("The value of num1 ++ is " + num1++);
+      console.log("The value of ++ num1 is " + ++num1);
+      console.log("The value of num1 -- is " + num1--);
+      console.log("The value of -- num is " + --num1);
+
+      // assignment operators
+
+      let e = 5; // number
+      let f = "2"; // string --> number in equal to == & not equal to !=
+      console.log("e = ", e, "& f = ", f);
+
+      e += 4; // e = e + 4
+      console.log("e = ", e); //9
+      e -= 4; // e = e - 4
+      console.log("e = ", e); //1
+      e *= 4; // e = e * 4
+      console.log("e = ", e); //20
+      e /= 4; // e = e / 4
+      console.log("e = ", e); //1.25
+      e %= 4; // e = e % 4
+      console.log("e = ", e); //1
+      e **= 4; // e = e ** 4
+      console.log("e = ", e); //625
+
+      //  comparison operators equal to == , not equal to != , not equal to & type !== , equal to & type ===
+
+      console.log("e == f", e == f); // false
+      console.log("e != f", e != f); // true
+      console.log("e === f", e === f); // false
+      console.log("e !== f", e !== f); // true
+      console.log("e < f", e < f); // true
+      console.log("e > f", e > f); // false
+      console.log("e <= f", e <= f); // true
+      console.log("e >= f", e >= f); // false
+
+      // logical operators , and &&, or || , not !
+      let g = 6;
+      let h = 5;
+
+      console.log("cond1 && cond2 = ", g > h && g == 6); // both true so ans is true
+      console.log("cond1 && cond2 = ", g > h && g == 5); // one true second false so ans is false
+      console.log("cond1 || cond2 = ", g < h || g == 6); // one false second true so ans is true
+      console.log("cond1 || cond2 = ", g < h && g == 5); // both false so ans is false
+      console.log("!(6 < 5) = ", !(g < h)); // false into true
+      console.log("!(6 > 5) = ", !(g > h)); // true into false  
+
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>This is a heading</h1>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
+          veritatis laborum maiores delectus iure, perspiciatis corporis
+          incidunt. Officia minus culpa laboriosam eligendi quos distinctio
+          blanditiis, illum vero ducimus excepturi. Sint asperiores illum magni
+          optio facere laudantium molestias dolorum porro ipsa.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

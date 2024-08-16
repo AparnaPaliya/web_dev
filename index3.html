@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="icon" href="/images/392361.png">
+</head>
+<body>
+    <form action="">
+        <label for="firstname">First Name :</label>
+        <input type="text" placeholder="Enter First Name" id="firstname" required><br>
+        <label for="lastname">Last Name :</label>
+        <input type="text" placeholder="Enter Last Name" id="lastname" disabled><br>
+
+        <label for="email">Enter Email Id :</label>
+        <input type="email" placeholder="Enter email id" id="email"><br>
+
+        <label for="password">Password :</label>
+        <input type="password" placeholder="Enter Password"><br>
+
+        <label for="age">Enter age :</label>
+        <input type="number" placeholder="Enter Age" id="age"><br>
+
+        <label for="dob">Enter your DOB :</label>
+        <input type="date"  id="dob"><br>
+
+        <label for="gender">Select gender : </label>
+        <input type="radio" value="Male" id="Male" name="gender"> 
+        <label for="Male">Male</label>
+        <input type="radio" value="Female" id="Female" name="gender">
+        <label for="Female">Female</label><br>
+
+        <label for="Country">Select Country :</label>
+        <select id="Country">
+            <option value="india">India</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+        </select>
+        <textarea placeholder="Explain your interest in registration0" name="" id="" cols="50" rows="5"></textarea><br>
+
+        <label for="file">Upload File :</label>
+        <input type="file" value="file" id="file"><br>
+        
+        <input type="checkbox" id="terms" value="agree">
+        <label for="terms"> I agree on the terms and conditions.</label><br>
+        <br><input type="submit">
+        <br><input type="reset">
+    </form>
+</body>
+</html>

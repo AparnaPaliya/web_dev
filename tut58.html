@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const product ={
+        title: "Ball Pen" ,
+        Rating: 4,
+        offer: 5,
+        Price: 270 ,
+    };
+
+    const Profile = {
+        username: "@AparnaPaliya" ,
+        isfollow: false , 
+        followers: 123 ,
+        following: 234 ,
+
+    };
+
+    console.log(product);
+    console.log(Profile);
+
+    console.log(typeof Profile);
+    console.log(typeof Profile["username"]);
+    console.log(typeof Profile["isfollow"]);
+    console.log(typeof Profile["followers"]);
+
+    // get user to input a number using prompt ("Enter the number :"). check if the is a multiple of 5 and 3 or not
+
+    let num = prompt("Enter a number : "); 
+    if (num % 5 === 0){   // write 3 in place of 5 for multiple of 3 
+        console.log(num, "is a multiple of 5")
+    } else {
+        console.log(num, "is NOT a multiple of 5")
+    }
+
+    /* write a code which can gave grades to students according to their scores : 
+    90-100 A, 70-89 B, 60-69 C, 50-59 D, 0-49 F */
+
+    let score = 62;
+    let grade;
+    if(score >= 90 && score <= 100) {
+        grade ="A";
+    } else if (score >= 70 && score <= 89) {
+        grade = "B";
+    } else if (score >= 60 && score <= 69) {
+        grade = "c";
+    } else if (score >= 50 && score <= 59) {
+        grade = "D";
+    } else if (score >= 0 && score <= 49) {
+        grade = "E";
+    }
+
+    console.log("according to your scores, your grade was : ", grade)
+
+    let scores = prompt("Enter your scores (0-100) : ");
+    let grades;
+    if(scores >= 90 && scores <= 100) {
+        grades ="A";
+    } else if (scores >= 70 && scores <= 89) {
+        grades = "B";
+    } else if (scores >= 60 && scores <= 69) {
+        grades = "c";
+    } else if (scores >= 50 && scores <= 59) {
+        grades = "D";
+    } else if (scores >= 0 && scores <= 49) {
+        grades = "E";
+    }
+
+    console.log("according to your scores, your grade was : ", grades)
+
+
+    
+</script>
+<body>
+   
+</body>
+</html>

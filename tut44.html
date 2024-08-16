@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript | Strings and String Methods</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi, quaerat corrupti quas, illum nobis tempore sequi cumque laboriosam magni expedita earum? Similique corrupti nam magni reprehenderit quia vero, reiciendis eius officiis doloremque ipsa?</p>
+    </div>
+    <script>
+    // var string = "this";
+    var string = 'thi"s';
+    var name = 'Aparna';
+    var channel = 'CodeWithAparna';
+    var message = 'Aparna is a good girl';
+    var temp = `${name} is a 'nice' person "and" she has a channel called ${channel}`;
+    console.log(string + name + message);
+    console.log(temp);
+     var len = name.length;
+    console.log(`Length of name is ${len}`)
+
+    console.log("Hello \\n world \n Aparna \t and");
+    var y = new String("this");
+    console.log(y);
+    document.getElementById('content').innerHTML = '<h3>this is an h3 heading</h3>'
+
+    // strings
+    let str = "ApnaCollege";
+    let newStr = str.toUpperCase();
+    let newStr1 = str.toLowerCase();
+    console.log(str);
+    console.log(newStr);
+    console.log(newStr1);
+    console.log(str.slice(0,3));
+    console.log(str.slice(2));
+    let str2 = "Aparna";
+    console.log(str[5]); // o 
+    console.log(str2.replace("Aparna" , "Sneha"));
+    let str1 = "Aparna\tPaliya";
+    console.log(str1.length); //13
+    let str3 = "0123456789"
+    console.log(str3.slice(1,3));
+    let res = str2.concat(str3);
+    let res1 = str2 + str3 ;
+    console.log(res);
+    console.log(res1);
+    let res2 = "I am learning coding from " + str + str2;
+    console.log(res2);
+
+    let str4 = "hello";
+    console.log(str4.replace("h" , "y"));
+    console.log(str4.replace("lo" , "p"));
+    let str5 = "hellololo";
+    console.log(str5.replaceAll("lo" , "p"));
+    console.log(str5.replace("lo" , "p"));
+
+    let str6 = "IloveJS";
+    str6 = str6.replace("I", "S");
+    console.log(str6) // SloveJS
+    console.log(str6.charAt(3)); //v
+
+
+     let obj = {
+        item: "Pen" ,
+        Price: 10 ,
+     };
+     let output = `the cost of ${obj.item} is ${obj.Price} rupees`;
+     console.log(output);
+     console.log("the cost of", obj.item, "is", obj.Price, "rupees");
+
+    //  Template Literals
+    let specialString = `This is a Template literal`;
+    console.log(typeof specialString);
+
+    let specialString1 = `This is a template literal ${1+2+3}`;
+    console.log(specialString1);
+    
+    </script>
+</body>
+</html>

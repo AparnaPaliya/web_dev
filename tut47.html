@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">simple si html</div>
+    <script>
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        // let employee = {
+        //     name: "Aparna",
+        //     salary: 10,
+        //     channel: "CodeWithAparna",
+        //     "channel 2": "ProgrammingWithAparna",
+        // }
+        // console.log(employee);
+
+        // let names = [1, 2, 4, "Aparna", undefined];
+        // let names = new Array(41, 2, 4, "Aparna", undefined);
+        let names = new Array(23);
+        console.log(names.length);
+        names = names.sort();
+        names.push("this is pushed");
+        console.log(names);
+
+
+        let marks = [97, 82, 75, 64, 36];
+        marks[4] = 55;
+        console.log(marks);
+        console.log(marks.length); // property
+        console.log(typeof(marks));
+        console.log(marks[0]);
+        console.log(marks[1]);
+        console.log(marks[4]);
+        console.log(marks[100]);
+
+        let heroes = ["ironman", "thor", "hulk", "shaktiman", "spiderman", "antman"];
+        console.log(heroes);
+         
+        //for loop
+       // for(let idx = 0; idx < heroes.length; idx++){
+        //    console.log(heroes[idx]);
+       // }
+
+      //  for(let i = 0; i < heroes.length; i++){
+       //     console.log(heroes[i]);
+      //  }
+
+      // for of
+      for(let hero of heroes){
+        console.log(hero);
+      }
+       
+      let cities = ["delhi", "pune", "mumbai", "hyderabad", "gurgaon"];
+      for(let city of cities){
+        console.log(city);
+        console.log(city.toUpperCase());
+      }
+
+      
+
+
+    </script>
+</body>
+</html>

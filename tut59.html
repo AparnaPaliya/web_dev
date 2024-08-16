@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    <p>This is JavaScript loops tut </p>
+    <script>
+        // Print 1 to 5 
+         for (let count = 1; count <=5; count++){
+             console.log("My College");
+         }
+
+         // Print 1 to 5 
+         for (let i = 1; i <=5; i++){
+             console.log("i = ", i);
+         }
+
+                 // Calculate sum of 1 to 100
+        let sum = 0;
+        let n = 100;
+        for(let i = 1; i<=n; i++){
+             sum = sum + i; // sum = 15
+        }
+        console.log("sum = ", sum);
+        console.log("loop has ended");
+         
+        // while loop
+        let j = 1;
+         while (j <= 10){
+            console.log("MY FAMILY");
+            j++;
+         }
+
+        //  do while loop
+        let a = 1;
+        do{
+            console.log("MY SPACE");
+            a++;
+        } while (a <= 5);
+
+        // for-of loop 
+        let str = "JavaScript";
+        let size = 0;
+        for (let i of str){
+            console.log("i= ", i);
+            size++;
+        }
+        console.log("string size = ", size); // 10
+
+        // for in loop 
+
+        let student = {
+            name: "Aparna Paliya",
+            age: 20,
+            cgpa: 8.1,
+            isPass: true,
+        };
+
+        for(let key in student){
+            console.log("key = ", key, "value = ", student[key]);
+          }
+
+        // for-in loop
+          let student1 = {
+            name: "Sneha Paliya",
+            age: 21,
+            cgpa: 8.2,
+            ispass: true,
+          };
+           
+          for(let key in student1){
+            console.log("key = ", key, "value = ", student1[key]);
+          }
+ 
+        //   Print all even numbers from 0 to 100 
+         for(let num = 0; num <= 100; num++){
+            if(num % 2 === 0){
+                // even number 
+                console.log("num = ", num);
+            }
+         }
+
+         //   Print all odd numbers from 0 to 100 
+         for(let num = 0; num <= 100; num++){
+            if(num % 2 !== 0){
+                // odd number 
+                console.log("num = ", num);
+            }
+         }
+
+
+
+      </script>
+</body>
+</html>
